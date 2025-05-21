@@ -9,7 +9,6 @@
   "author": "toasty360",
   "license": "MIT",
   "dependencies": {
-    "webcrack": "^1.2.0",
-    "node-fetch": "^3.4.0"
+    "webcrack": "^latest"
   }
 }
