@@ -32,3 +32,4 @@ const main = async () => {
     console.error("🌽 Failed:", err.message);
   }
 };
+main();
