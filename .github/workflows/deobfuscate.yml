@@ -1,8 +1,8 @@
-name: Deobfuscate and Commit JS Every Hour
+name: Deobfuscate
 
 on:
   schedule:
-    - cron: "0 * * * *" # Every hour
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 jobs:
